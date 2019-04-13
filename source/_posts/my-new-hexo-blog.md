@@ -26,6 +26,23 @@ preview 博客：[niexiaotao.cn](http://niexiaotao.cn/)
 [Markdown语法](https://www.jianshu.com/p/191d1e21f7ed)
 
 换机更新博客[方法](https://www.zhihu.com/question/21193762/answer/79109280)
+主要思路还是将本地Hexo原始文件以及生成的网页静态文件分别放在github不同的分支，其中Hexo分支设为默认分支。
+换机更新博客时，首先安装好本地git环境，安装nodejs，Hexo，再git clone Hexo repo至本地。
+本地更新博客时，先更新上传Hexo 原文件，再生成网页static文件并部署至github pages。
+
+```
+# 上传博客source 文件
+git add .
+git commit -m "update blog"
+git push
+
+# 生成静态网页文件，并部署至github pages
+hexo c
+hexo g
+hexo d
+```
+
+
 
 #### 其他比较好看的themes：
 
@@ -43,4 +60,4 @@ PolarBear: [Frost](https://d2fan.com/)（[github](https://github.com/frostfan/he
 
 ....
 
-之前一直在用WordPress，不过并不是很喜欢，所以一直在想自己搭一个blog。虽然心心念念，但拖了很久。对于本人这种选择困难症来说，选theme真是一件痛苦的事情。因为比较喜欢偏简洁一点的风格，所以最后选定这款aircloud。
+之前一直在用WordPress，不过并不是很喜欢，所以一直在想自己搭一个blog。虽然心心念念，但拖了很久。对于本人这种选择困难症来说，选theme真是一件痛苦的事情。因为比较喜欢偏简洁一点的风格，所以最后选了这个巨简风aircloud。
