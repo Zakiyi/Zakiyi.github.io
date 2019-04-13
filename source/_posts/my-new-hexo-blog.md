@@ -26,9 +26,7 @@ preview 博客：[niexiaotao.cn](http://niexiaotao.cn/)
 [Markdown语法](https://www.jianshu.com/p/191d1e21f7ed)
 
 换机更新博客[方法](https://www.zhihu.com/question/21193762/answer/79109280)
-主要思路还是将本地Hexo原始文件以及生成的网页静态文件分别放在github不同的分支，其中Hexo分支设为默认分支。
-换机更新博客时，首先安装好本地git环境，安装nodejs，Hexo，再git clone Hexo repo至本地。
-本地更新博客时，先更新上传Hexo 原文件，再生成网页static文件并部署至github pages。
+主要思路还是将本地Hexo原始文件以及生成的网页静态文件分别放在github不同的分支，其中Hexo分支设为默认分支。换机更新博客时，首先安装好本地git环境，安装nodejs，Hexo，再git clone Hexo repo至本地。本地更新博客时，先更新上传Hexo 原文件，再生成网页static文件并部署至github pages。
 
 ```
 # 上传博客source 文件
