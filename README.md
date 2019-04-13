@@ -1,2 +1,0 @@
-# Zakiyi.github.io
-Homepage
