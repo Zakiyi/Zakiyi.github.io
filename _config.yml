@@ -90,5 +90,5 @@ theme: aircloud
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
  type: git
- repository: https://github.com/Zakiyi/zakiyi.github.io.git
+ repository: https://github.com/Zakiyi/Zakiyi.github.io.git
  branch: master 
