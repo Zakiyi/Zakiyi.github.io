@@ -11,7 +11,7 @@ Git提供了多种使用模式，桌面客户端或者是命令行模式，以�
 
 命令行模式下，用户可以使用所有的命令操作实现 Git 全部功能，相较之下，GUI 模式只是 Git 简化版。
 
-![Git workflow](Git使用笔记/Git workflow.jpg)
+![Git workflow](Git使用笔记1/Git workflow.jpg)
 
 Workspace：工作区  
 Index / Stage：暂存区  
