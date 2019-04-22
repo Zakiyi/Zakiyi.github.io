@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Pro Git 2 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Thinking, Coding, Writing </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/image/head.jpg">
+        </div>
+        <div class="name">
+            <i>Zyi</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git-常用命令"><span class="toc-text">Git 常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#初始化与配置"><span class="toc-text">初始化与配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件基本操作"><span class="toc-text">文件基本操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#仓库基本操作"><span class="toc-text">仓库基本操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#远程仓库操作"><span class="toc-text">远程仓库操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#底层命令"><span class="toc-text">底层命令</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input">
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Thinking, Coding, Writing </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Pro Git 2
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2019-04-22 21:46:21</span></span>
+        
+        
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+
+    </div>
+    <div class="post-content no-indent">
+        <h3 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h3><h4 id="初始化与配置"><a href="#初始化与配置" class="headerlink" title="初始化与配置"></a>初始化与配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init　　　　　　　　　# 初始化仓库</span><br><span class="line">git config --list      # 检查配置信息</span><br><span class="line">git config --global user.name        # 设置用户名</span><br><span class="line">git config --global user.email       # 设置用户邮箱</span><br><span class="line">git config --global core.editor      # 设置文本编辑器</span><br><span class="line">git config --global alias.xx xxxx    # 设置命令别名</span><br></pre></td></tr></table></figure>
+<h4 id="文件基本操作"><a href="#文件基本操作" class="headerlink" title="文件基本操作"></a>文件基本操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">git add       # 对当前追踪的文件制作快照，并将其索引添加至暂存区, 用于下一次提交（快照备份　＋　建立索引）</span><br><span class="line">git status    # 查看文件状态，是否追踪，修改，(待)提交等</span><br><span class="line">git diff　　　 # 比较工作目录中当前文件和暂存区域快照之间的差异，也就是修改之后还没有暂存起来的变化内容</span><br><span class="line"></span><br><span class="line">git commit　　 # 生成提交信息（git status 里的内容），并将暂存区快照（索引）提交至仓库</span><br><span class="line">　　　　　　　　　　-a: 跳过 git add 步骤，直接将追踪的文件以及相应的提交信息，提交至仓库</span><br><span class="line">                 --amend: 执行后本次提交会覆盖上次提交(git log 可以发现前后两次提交记录只算一次)</span><br><span class="line"></span><br><span class="line">git rm　　　　　# 删除已追踪文件</span><br><span class="line">　　　　　　　　　　-f: 强制删除已加入暂存区的文件</span><br><span class="line">　　　　　　　　　　-cached: 取消文件已追踪状态，但会保留其本地存储内容</span><br><span class="line"></span><br><span class="line">git mv        # 移动文件或者重命名文件</span><br><span class="line">git log       # 查看提交历史</span><br><span class="line">                --pretty=oneline  master: 查看某一分支提交历史</span><br><span class="line">git reset     # 取消文件暂存,　但并不会修改工作目录的文件.　可以理解为取消对 tracked 文件更新做快照备份</span><br><span class="line">git checkout　--  # 撤销修改，恢复文件至上一次提交时的状态, (所以这命令比较危险，因为会直接修改覆盖本地工作目录的文件)</span><br><span class="line">git clean     # 清理工作目录</span><br><span class="line">　　　　　　　　　　-f: 强制移除文件</span><br><span class="line">　　　　　　　　　　-d: 必须跟-f 一起，表示文件夹也一起移除</span><br><span class="line">　　　　　　　　　　-n: 显示哪些文件将被删除</span><br><span class="line">　　　　　　　　　　-x: 表示将　.gitignore 里忽略的文件一起删除</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意 git rm 只能对已追踪的 (tracked) 文件进行操作，对于已追踪但是未加入暂存区 (index) 的文件 (unstaged)，直接 git rm file_name;<br>对已加入 index 的文件则需要加入 -f 进行强制删除，git rm -r file_name；<br>这两个命令会将整个文件从本地磁盘删掉，如果只是希望不再追踪此文件，但是仍希望保存其在本地目录，那么需要执行 git rm -cached file_name　或是　git rm filefolder/\*.suffix;  </p>
+<p>如果文件已经被添加至 index，同时在外部删除该文件，那么 git status 会显示 unstaged commit．<br>此时执行 git add.，或者 git rm 会有一点类似，都会在下一次 commit 时提交信息中会包含这一改动，如　“deleted xx_file”；　如果</p>
+<blockquote>
+<p>虽然通过 .gitignore 添加文件也可以取消某类文件的追踪，但是要取消已追踪文件还是要通过 git rm.　</p>
+</blockquote>
+</blockquote>
+<h4 id="仓库基本操作"><a href="#仓库基本操作" class="headerlink" title="仓库基本操作"></a>仓库基本操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">git branch　　　　　# 得到当前所有分支的一个列表, * 字符标记的分支表示当前所在分支</span><br><span class="line">　　　　　　　　　　　　-v: 查看每一个分支的最后一次提交</span><br><span class="line">                    -d: 删除分支</span><br><span class="line">                    -r: 查看远程分支</span><br><span class="line">                    -a: 查看所有分支，包括本地分支，以及远程分支</span><br><span class="line">                    -u: 设置本地分支</span><br><span class="line">              --merged: 查看哪些分支已经合并到当前分支</span><br><span class="line">           --no-merged: 查看尚未合并到当前分支的分支</span><br><span class="line"></span><br><span class="line">git merge　　　　　 # 合并分支至 master</span><br><span class="line">git checkout　　   # 切换分支</span><br><span class="line">                    -b:　切换并新建分支</span><br></pre></td></tr></table></figure>
+<h4 id="远程仓库操作"><a href="#远程仓库操作" class="headerlink" title="远程仓库操作"></a>远程仓库操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git remote   # 显示远程仓库的简写</span><br><span class="line">　　　　　　　　　-v: 显示远程仓库使用的 Git 保存的简写与其对应的 URL</span><br><span class="line">             -add: &lt;shortname&gt; &lt;url&gt; 添加一个新的远程 Git 仓库, 并指定其简写名称</span><br><span class="line">           rename: 远程仓库重命名</span><br><span class="line">           　　 rm: 移除远程仓库</span><br><span class="line">　　　　　　　　show: [remote-name] 显示远程仓库信息</span><br><span class="line"></span><br><span class="line">git clone    #　获取远程仓库所有数据至本地, git clone url filefolder 可以指定本地仓库文件夹名　　　　　</span><br><span class="line">git fetch    # 从远程仓库获取更新，并将本地远程引用指向最新一次提交对象</span><br><span class="line">git pull　　　# 获取远程仓库某一分支数据，并</span><br><span class="line">git push     # 推送本地分支至远程仓库分支</span><br><span class="line">               git push origin branch     #　推送本地 branch 至远程相同 branch</span><br><span class="line">　　　　　　　　　git push origin local_branch:remote_branch   #　推送指定本地 branch 至远程指定 branch</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果远程仓库发生变化，比如其他用户进行了更新，那么此时推送会被拒绝．必须先将远程仓库 git pull.<br>git clone 会给远程仓库自动添加 origin 的简称, 且自动设置本地 master 分支跟踪 colned 远程仓库的 master 分支（或其他默认分支）</p>
+</blockquote>
+<h4 id="底层命令"><a href="#底层命令" class="headerlink" title="底层命令"></a>底层命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git hash-object -w file_name   # 将文件保存为 blob 对象，返回校验和（SHA-1哈希值）</span><br><span class="line">git write-tree　　　　　　　　　  # 创建树对象</span><br><span class="line">git update-index --add --cacheinfo  # 更新索引文件, 后面应给出文件模式，文件校验和，文件名</span><br><span class="line">git cat-file -t &apos;hash-value&apos;   # 查看 Git 存储文件类型，输出为: tree, blob, 或者 commit</span><br><span class="line">git cat-file -p &apos;hash-value&apos;   # 根据给定的哈希值, 查看对应 .git/objects 下的存储文件信息</span><br></pre></td></tr></table></figure>
+<p><code>`</code></p>
+<blockquote>
+<p>至此，可以看出每次暂存操作会计算每个文件校验和，将每个文件保存成 blob　对象，并以生成的校验和作为目录名和文件名</p>
+</blockquote>
+
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>

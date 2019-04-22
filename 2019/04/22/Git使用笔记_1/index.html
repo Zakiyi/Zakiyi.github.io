@@ -11,7 +11,7 @@
 
     <title>
         
-        Pro Git笔记２ - undefined
+        Pro Git笔记１ - undefined
         
     </title>
 
@@ -119,11 +119,11 @@
 
 <div class="post-container">
     <div class="post-title">
-        Pro Git笔记２
+        Pro Git笔记１
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2019-04-22 21:39:30</span></span>
+        <span class="attr">发布于：<span>2019-04-22 21:42:49</span></span>
         
         <span class="attr">标签：/
         
@@ -148,7 +148,7 @@
 <h3 id="３．获取仓库-Repository-："><a href="#３．获取仓库-Repository-：" class="headerlink" title="３．获取仓库 (Repository)："></a>３．获取仓库 (Repository)：</h3><p>使用 Git 对项目或者文件进行版本管理时，需要先配置初始化仓库－－repository 以存储各种项目文件．通常有两种方式:</p>
 <p>１. 直接从本地文件夹建立repository<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git init    # 将当前目录变成仓库，会在当前文件夹生成　,git文件夹，其中包含了 repository 框架文件</span><br><span class="line">git add .　 # 保存快照，并添加文件索引信息至暂存区（索引）</span><br><span class="line">git add LICENSE</span><br><span class="line">git commit -m &quot;init project version&quot;　　    　# 提交更新，生成 commit 对象</span><br></pre></td></tr></table></figure></p>
 <p>２. Clone 已有 repository 至本地<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  https://github.com/repository　　　# 拷贝远程仓库所有数据至本地</span><br></pre></td></tr></table></figure></p>
-<h3 id="４．Git-环境基本概念："><a href="#４．Git-环境基本概念：" class="headerlink" title="４．Git 环境基本概念："></a>４．Git 环境基本概念：</h3><p>&nbsp;　　　　<img src="/2019/04/22/Git使用笔记1/workflow.png" alt="Git workflow">  </p>
+<h3 id="４．Git-环境基本概念："><a href="#４．Git-环境基本概念：" class="headerlink" title="４．Git 环境基本概念："></a>４．Git 环境基本概念：</h3><p>&nbsp;　　　　<img src="/2019/04/22/Git使用笔记_1/Git使用笔记1/workflow.png" alt="Git workflow">  </p>
 <h4 id="文件状态"><a href="#文件状态" class="headerlink" title="文件状态"></a>文件状态</h4><p>Git 仓库下的文件要么处于已被追踪状态 (tracked)，要么属于未被追踪状态(untracked)，执行 git add，该文件就会被追踪，只有被追踪的文件 (tracked) 才会被纳入版本管理。被追踪的文件通常有几种状态: 已修改(modified)，已暂存(staged)，已提交(committed)：  </p>
 <ul>
 <li>Modified — 表示文件已经被修改，但还未保存至仓库数据库。  </li>
@@ -172,7 +172,7 @@
 </blockquote>
 </li>
 </ul>
-<p>&nbsp;　 　<img src="/2019/04/22/Git使用笔记1/lifecycle.png" alt></p>
+<p>&nbsp;　 　<img src="/2019/04/22/Git使用笔记_1/Git使用笔记1/lifecycle.png" alt></p>
 <p>因此，简单来讲，Git 基本工作流程包括:  </p>
 <ol>
 <li>修改操作: 在工作区修改文件　　</li>
@@ -207,7 +207,7 @@
 <blockquote>
 <p>准确说法应该是，commit object 包括: 指向顶层树对象的指针, 父提交对象指针, 作者信息，以及提交时的注释信息。  </p>
 </blockquote>
-<p><img src="/2019/04/22/Git使用笔记1/tree_commit .png" alt></p>
+<p><img src="/2019/04/22/Git使用笔记_1/Git使用笔记1/tree_commit .png" alt></p>
 <blockquote>
 <p>图片参考　<a href="https://courses.csail.mit.edu/6.S194/13/lessons/03-git/git-internally.html" target="_blank" rel="noopener">how git work</a></p>
 </blockquote>
@@ -255,7 +255,7 @@
 <blockquote>
 <p>注意，如果在两个分支中，对同一个文件的同一个部分进行了不同的修改，Git 会出现合并失败，此时需要手动去解决。</p>
 </blockquote>
-<p><img src="/2019/04/22/Git使用笔记1/advance-testing.png" alt></p>
+<p><img src="/2019/04/22/Git使用笔记_1/Git使用笔记1/advance-testing.png" alt></p>
 <h5 id="６-２-２-远程分支操作"><a href="#６-２-２-远程分支操作" class="headerlink" title="６.２.２ 远程分支操作:"></a>６.２.２ 远程分支操作:</h5><p>远程分支操作主要包括：设置远程跟踪分支，同步，推送</p>
 <ul>
 <li>设置远程跟踪分支 — 将本地仓库分支与本地的远程跟踪分支相关联  </li>
